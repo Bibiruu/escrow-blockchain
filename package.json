@@ -1,5 +1,29 @@
 {
+  "name": "escrow-blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bibiruu/escrow-blockchain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bibiruu/escrow-blockchain.git/issues"
+  },
+  "homepage": "https://github.com/Bibiruu/escrow-blockchain.git#readme",
   "dependencies": {
-    "solc": "^0.8.21"
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "dotenv": "^16.4.5",
+    "truffle": "^5.5.5"
   }
 }

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.21;
+pragma solidity ^0.8.19;
 
 contract Escrow {
     address public payer;
@@ -14,7 +14,7 @@ contract Escrow {
         amount = _amount;
     }
 
-    function deposit() public payable {
+    function deposit() payable public {
         require(msg.sender == payer, "Sender must be the payer");
         //having the correct amount in contract
         require(address(this).balance <= amount, "Cant send more than the escrow amount");
@@ -29,7 +29,7 @@ contract Escrow {
         payee.transfer(amount);
     }
 
-    function balanceOf() public view returns (uint256) {
+    function balanceOf() view public returns (uint256) {
         return address(this).balance;
     }
 }
