@@ -1,4 +1,4 @@
-const Escrow = require.artifacts('Escrow');
+const Escrow = require.artifacts("Escrow'");
 
 const assertError = async (assert, error) => {
     try {
