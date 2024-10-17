@@ -26,7 +26,7 @@ class App extends Component {
   )
 
   updatedateBalance() {
-    
+
   }
 render() {
   return (
